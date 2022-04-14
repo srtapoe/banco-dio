@@ -8,5 +8,5 @@ import lombok.Setter;
 @Getter
 public class Cliente {
 
-   private String nome;
+   protected String nome;
 }

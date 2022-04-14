@@ -7,10 +7,7 @@ public class ContaPoupanca extends Conta{
 
     @Override
     public void mostrarSaldo(){
-        System.out.println("\\uD83E\\uDDFE\\uD83E\\uDDFE CONTA POUPANÇA \\uD83E\\uDDFE\\uD83E\\uDDFE");
-        mostrarSaldo();
+        System.out.println("================== CONTA POUPANÇA ==================");
+        super.mostrarSaldo();
     }
-
-
-
 }

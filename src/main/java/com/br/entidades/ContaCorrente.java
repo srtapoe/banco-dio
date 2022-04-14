@@ -12,16 +12,17 @@ public class ContaCorrente extends Conta{
     public void sacar(double valor) {
         if(valor <= saldo){
             saldo -= valor;
-        }else if(valor > saldo || saldo <=1.0 || CHEQUE_ESPECIAL != 0){
+        }else if(saldo == 0 && CHEQUE_ESPECIAL != 0){
             CHEQUE_ESPECIAL -= valor;
+            saldo -= CHEQUE_ESPECIAL;
         }
     }
 
 
     @Override
     public void mostrarSaldo(){
-        System.out.println("\\uD83E\\uDDFE\\uD83E\\uDDFE CONTA CORRENTE \\uD83E\\uDDFE\\uD83E\\uDDFE");
-        mostrarSaldo();
+        System.out.println("================== CONTA CORRENTE ==================");
+        super.mostrarSaldo();
     }
 
 }

@@ -39,10 +39,11 @@ public abstract class Conta implements IConta{
 
     @Override
     public void mostrarSaldo() {
-        System.out.println("\t\\uD83C\\uDFE6\t\\uD83C\\uDFE6 Castle Bank \t\\uD83C\\uDFE6\t\\uD83C\\uDFE6");
-        System.out.println("\\uD83D\\uDE4B\\uD83D\\uDE4B Titular da conta: " + this.cliente.getNome());
-        System.out.println("\\uD83D\\uDCB5\\uD83D\\uDCB5 Agência: " + this.agencia);
-        System.out.println("\\uD83D\\uDCB5\\uD83D\\uDCB5 Conta: " + this.numeroConta);
+        System.out.println("=================== Castle Bank ============================");
+        System.out.println(" Titular da conta: " + this.cliente.getNome());
+        System.out.println(" Agência: " + this.agencia);
+        System.out.println(" Conta: " + this.numeroConta);
+        System.out.println(" Saldo: R$ " + this.saldo);
     }
 
 
