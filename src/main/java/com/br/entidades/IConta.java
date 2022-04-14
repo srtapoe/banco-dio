@@ -2,11 +2,11 @@ package com.br.entidades;
 
 public interface IConta {
 
-    void sacar();
+    void sacar(double valor);
 
-    void depositar();
+    void depositar(double valor);
 
-    void transferir();
+    void transferir(double valor, IConta contaDestino);
 
     void mostrarSaldo();
 }
